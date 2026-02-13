@@ -1,6 +1,7 @@
 name: NAV Scheduler
 
 on:
+   workflow_dispatch:   # ← enables manual run button
   schedule:
     # Market Open – 09:16 IST (03:46 UTC)
     - cron: '46 3 * * 1-5'
