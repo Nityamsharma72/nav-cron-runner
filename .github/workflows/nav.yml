@@ -1,7 +1,7 @@
 name: NAV Scheduler
 
 on:
-   workflow_dispatch:   # ← enables manual run button
+  workflow_dispatch:
   schedule:
     # Market Open – 09:16 IST (03:46 UTC)
     - cron: '46 3 * * 1-5'
@@ -12,7 +12,7 @@ on:
     # Market Close – 15:31 IST (10:01 UTC)
     - cron: '1 10 * * 1-5'
 
-       # Actual NAV – 23:10 IST (17:40 UTC)
+    # Actual NAV – 23:10 IST (17:40 UTC)
     - cron: '40 17 * * *'
 
     # Night Summary – 23:12 IST (17:42 UTC)
@@ -25,4 +25,4 @@ jobs:
     steps:
       - name: Call Apps Script Web App
         run: |
-          curl -L "https://script.google.com/macros/s/AKfycbzPIczGawh4kNdiemgQEc1EuhdF8dhYC7-LFBCr25HzvUkJou9Bazt1EeW5t45NLcYQ/exec?action=auto&key=ABC123XYZ"
+          curl -L "https://script.google.com/macros/s/AKfycbzPIczGawh4kNdiemgQEc1EuhdF8dhYC7-LFBCr25HzvUkJou9Bazt1EeW5t45NLcYQ/exec?action=auto&key=ABS123XYZ"
