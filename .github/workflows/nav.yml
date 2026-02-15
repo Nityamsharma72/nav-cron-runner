@@ -25,4 +25,4 @@ jobs:
     steps:
       - name: Call Apps Script Web App
         run: |
-          curl -L "https://script.google.com/macros/s/AKfycbzPIczGawh4kNdiemgQEc1EuhdF8dhYC7-LFBCr25HzvUkJou9Bazt1EeW5t45NLcYQ/exec?action=open&key=ABC123XYZ"
+          curl -L "https://script.google.com/macros/s/AKfycbzPIczGawh4kNdiemgQEc1EuhdF8dhYC7-LFBCr25HzvUkJou9Bazt1EeW5t45NLcYQ/exec?action=auto&key=ABC123XYZ"
